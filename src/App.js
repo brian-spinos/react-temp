@@ -35,9 +35,14 @@ class App extends Component {
                 {/* Mapping of routes and components */}
                 <Switch>
                     <Route exact path='/users' component={UserList}/>
+                    <Route exact path='/users/:id' component={User}/>
                     <Route exact path='/posts' component={PostList}/>
+                    <Route exact path='/posts/:id' component={Post}/>
                     <Route exact path='/user' component={User}/>
                     <Route exact path='/post' component={Post}/>
+                    <Route render={() => {
+                        return <p>Link Not Found</p>
+                    }} />
                 </Switch>
 
 
