@@ -21,10 +21,35 @@ const userReducer = (state=myState, action) => {
             break
         }
 
-        case 'ACTION_A': {
-            state = {...state, foobar: action.payload}
+        //
+        // Testing promise middleware (START)
+        //
+
+        case 'GET_USERS': {
+            console.log('GET_USERS called!')
+            // state = {...state, userGroup: action.payload}
             break
-        }
+        } 
+
+        case 'GET_USERS_PENDING': {
+            state = {...state, userGroup: action.payload}
+            break
+        } 
+
+        case 'GET_USERS_REJECTED': {
+            state = {...state, userGroup: action.payload}
+            break
+        } 
+
+        case 'GET_USERS_FULFILLED': {
+            let data = action.payload.data
+            state = {...state, userGroup: data}
+            break
+        } 
+
+        //
+        // Testing promise middleware (END)
+        //
 
         case 'ACTION_B': {
             state = {...state, foobar: action.payload}
