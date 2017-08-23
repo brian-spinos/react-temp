@@ -35,6 +35,7 @@ class App extends Component {
                     {/* Links */}
                     <p><Link to='/users'>Users</Link></p>
                     <p><Link to='/posts'>Posts</Link></p>
+                    <p><Link to='/posts'>Misc</Link></p>
 
                     {/* Mapping of routes and components */}
                     <Switch>
