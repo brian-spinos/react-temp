@@ -36,7 +36,7 @@ class User extends Component {
                 <button onClick={this.changeFavCharacters}>Click Me!</button>
 
                 <button onClick={this._getUserWithId(user_id)}>Get user with id {user_id}</button>
-                */}
+
 
 
 
@@ -48,6 +48,7 @@ class User extends Component {
                 }
 
                 <p>foobar: {this.props.foobar}</p>
+                */}
             </div>
         )
     }
