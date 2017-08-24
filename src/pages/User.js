@@ -25,14 +25,18 @@ class User extends Component {
     }
 
     render() {
-        let user_id = this.props.match.params.id
+        // let user_id = this.props.match.params.id
 
         return (
             <div className="User">
+
+                <h1>some user here</h1>
+
+                {/*
                 <h1>User Component #{this.props.match.params.id}</h1>
 
 
-                {/*
+
                 <button onClick={this.changeFavCharacters}>Click Me!</button>
 
                 <button onClick={this._getUserWithId(user_id)}>Get user with id {user_id}</button>
