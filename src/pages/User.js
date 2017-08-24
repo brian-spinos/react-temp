@@ -32,10 +32,10 @@ class User extends Component {
 
                 <h1>some user here</h1>
 
-                {/*
+
                 <h1>User Component #{this.props.match.params.id}</h1>
 
-
+                {/*
 
                 <button onClick={this.changeFavCharacters}>Click Me!</button>
 
