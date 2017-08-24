@@ -31,9 +31,14 @@ class User extends Component {
             <div className="User">
                 <h1>User Component #{this.props.match.params.id}</h1>
 
+
+                {/*
                 <button onClick={this.changeFavCharacters}>Click Me!</button>
 
                 <button onClick={this._getUserWithId(user_id)}>Get user with id {user_id}</button>
+                */}
+
+
 
                 <h3>Fav Characters</h3>
                 {
