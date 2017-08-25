@@ -56,3 +56,21 @@ import MyStore from './store/MyStore' // create your store
 - npm i -S axios redux-thunk redux-logger redux-promise-middleware
 - https://jsonplaceholder.typicode.com/
     - https://jsonplaceholder.typicode.com/users/10
+
+
+
+# workflow:
+
+- from component, fire an action
+- from component function use MyStore.dispatch(someAction)
+- someAction in the actions folder should return a hash with {type: x, payload: y}
+- Go to reducer and change state
+- with the state updated, your component should update!
+
+- -> component -> MyStore.dispatch(action) -> reducer -> change state -> component is updated!
+
+- update files: component, action, reducer
+
+
+
+
